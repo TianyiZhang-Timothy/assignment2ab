@@ -11,7 +11,14 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // clear result
+            student_result.InnerHtml = "";
+            // what user input
             string searchkey = "";
+            if (Page.IsPostBack)
+            {
+                searchkey = student_search.Text;
+            }
 
             // query
             string query = "select * from STUDENTS";
@@ -30,20 +37,18 @@ namespace HTTP5101_School_System
                 student_result.InnerHtml += "<div class=\"listitem\">";
 
                 string studentid = row["STUDENTID"];
-
                 string studentfirstname = row["STUDENTFNAME"];
-                student_result.InnerHtml += "<div class=\"col3\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfirstname + "</a></div>";
-
                 string studentlastname = row["STUDENTLNAME"];
-                student_result.InnerHtml += "<div class=\"col3\">" + studentlastname + "</div>";
-
+                string studentfullname = studentfirstname + " " + studentlastname;
                 string studentnumber = row["STUDENTNUMBER"];
+                string enrolmentdate = row["ENROLMENTDATE"];
+
+                student_result.InnerHtml += "<div class=\"col3\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfullname + "</a></div>";
+
                 student_result.InnerHtml += "<div class=\"col3\">" + studentnumber + "</div>";
 
-                string enrolmentdate = row["ENROLMENTDATE"];
-                student_result.InnerHtml += "<div class=\"col3last\">" + enrolmentdate + "</div>";
+                student_result.InnerHtml += "<div class=\"col3last\">" + enrolmentdate + "</div>"+ "</div>";
 
-                student_result.InnerHtml += "</div>";
             }
         }
     }
