@@ -25,8 +25,8 @@ footer {
 
 .listitem {
     background: #fefefe;
-    padding: 12px 5%;
-    width: 90%;
+    padding: 12px 20px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -50,6 +50,7 @@ footer {
     float: left;
     width: 21.73%;
     margin-right: 4.34%;
+    font-size: 0.8em;
 }
 
 .col4last {
@@ -59,6 +60,7 @@ footer {
 .col3, .col3last {
     float: left;
     width: 30%;
+    font-size: 0.8em;
     margin-right: 3.3%;
 }
 

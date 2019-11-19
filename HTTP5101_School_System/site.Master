@@ -16,10 +16,9 @@
         <div class="header-content">
             <div id="logo">DATA<span>BASE</span></div>
             <ul id="nav-menu">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="StudentPage">Student</a></li>
+                <li><a href="TeacherPage">Teacher</a></li>
+                <li><a href="ClassPage">Class</a></li>
             </ul>
         </div>
     </header>

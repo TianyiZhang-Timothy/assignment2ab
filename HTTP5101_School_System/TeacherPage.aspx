@@ -12,12 +12,12 @@
     </div>
     <div class="info_table" runat="server">
         <div class="title">
-            <div class="col4">STUDENT NUMBER</div>
+            <div class="col4">EMPLOYEE NUMBER</div>
             <div class="col4">FULL NAME</div>
-            <div class="col4">FULL NAME</div>
-            <div class="col4last">ENROLMENT DATE</div>
+            <div class="col4">HIRE DATE</div>
+            <div class="col4last">SALARY</div>
         </div>
-        <div id="student_result" runat="server">
+        <div id="teacher_result" runat="server">
         </div>
     </div>
 
