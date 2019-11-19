@@ -122,12 +122,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClassPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
+    <Content Include="DetailPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -172,12 +174,28 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ShowStudent.aspx" />
+    <Content Include="StudentPage.aspx" />
+    <Content Include="TeacherPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="ClassPage.aspx.cs">
+      <DependentUpon>ClassPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassPage.aspx.designer.cs">
+      <DependentUpon>ClassPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPage.aspx.cs">
+      <DependentUpon>DetailPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailPage.aspx.designer.cs">
+      <DependentUpon>DetailPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,6 +228,20 @@
     </Compile>
     <Compile Include="ShowStudent.aspx.designer.cs">
       <DependentUpon>ShowStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPage.aspx.cs">
+      <DependentUpon>StudentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPage.aspx.designer.cs">
+      <DependentUpon>StudentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherPage.aspx.cs">
+      <DependentUpon>TeacherPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherPage.aspx.designer.cs">
+      <DependentUpon>TeacherPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
