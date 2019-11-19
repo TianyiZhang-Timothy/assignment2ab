@@ -23,9 +23,9 @@ namespace HTTP5101_School_System
 
                 if (student_record.Count > 0)
                 {
-                    student_title_fname.InnerHtml = student_record["STUDENTFNAME"] + " " + student_record["STUDENTLNAME"];
-                    student_fname.InnerHtml = student_record["STUDENTFNAME"];
-                    student_lname.InnerHtml = student_record["STUDENTLNAME"];
+                    //student_title_fname.InnerHtml = student_record["STUDENTFNAME"] + " " + student_record["STUDENTLNAME"];
+                    //student_fname.InnerHtml = student_record["STUDENTFNAME"];
+                    //student_lname.InnerHtml = student_record["STUDENTLNAME"];
                     student_number.InnerHtml = student_record["STUDENTNUMBER"];
                     enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
                 }
@@ -37,7 +37,7 @@ namespace HTTP5101_School_System
 
             if (!valid)
             {
-                student.InnerHtml = "There was an error finding that student.";
+                //student.InnerHtml = "There was an error finding that student.";
             }
         }
     }

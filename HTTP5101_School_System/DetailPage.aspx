@@ -1,15 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DetailPage.aspx.cs" Inherits="HTTP5101_School_System.DetailPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ShowStudent.aspx.cs" Inherits="HTTP5101_School_System.ShowStudent" %>
+<asp:Content ID="student_view" ContentPlaceHolderID="body" runat="server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+    <!-- 
+        Note: this page is intentionally styled poorly.
+        Work with your group members to understand how it works and improve it!
+    -->
+    <div id="detail" runat="server">
+        <h2>Details for <span id="title_fullname" runat="server"></span></h2>
+        Full Name: <span id="fullname" runat="server"></span><br />
+        Student Number: <span id="student_number" runat="server"></span><br />
+        Enrolment Date: <span id="enrolment_date" runat="server"></span><br />
+    </div>
+</asp:Content>

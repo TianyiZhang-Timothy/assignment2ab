@@ -13,40 +13,31 @@ namespace HTTP5101_School_System {
     public partial class ShowStudent {
         
         /// <summary>
-        /// student control.
+        /// detail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl detail;
         
         /// <summary>
-        /// student_title_fname control.
+        /// title_fullname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_title_fname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl title_fullname;
         
         /// <summary>
-        /// student_fname control.
+        /// fullname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_fname;
-        
-        /// <summary>
-        /// student_lname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl student_lname;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fullname;
         
         /// <summary>
         /// student_number control.

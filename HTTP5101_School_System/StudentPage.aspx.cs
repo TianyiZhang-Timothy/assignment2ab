@@ -43,7 +43,7 @@ namespace HTTP5101_School_System
                 string studentnumber = row["STUDENTNUMBER"];
                 string enrolmentdate = row["ENROLMENTDATE"];
 
-                student_result.InnerHtml += "<div class=\"col3\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfullname + "</a></div>";
+                student_result.InnerHtml += "<div class=\"col3\"><a href=\"DetailPage.aspx?studentid=" + studentid + "\">" + studentfullname + "</a></div>";
 
                 student_result.InnerHtml += "<div class=\"col3\">" + studentnumber + "</div>";
 
