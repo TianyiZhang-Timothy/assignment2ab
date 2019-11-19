@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="HTTP5101_School_System.site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+    <script src="https://kit.fontawesome.com/c7c508e324.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Quattrocento+Sans&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <header>
+        <div class="header-content">
+            <div id="logo">DATA<span>BASE</span></div>
+            <ul id="nav-menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="cwidth">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-contents">
+            <div class="logo-container">
+                <div id="logo">DATA<span>BASE</span></div>
+            </div>
+
+            <div class="footer-links">
+                <h2>Help and Services</h2>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-links">
+                <h2>Menu</h2>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Contact Me</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="footer-links">
+                <h2>Follow us</h2>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

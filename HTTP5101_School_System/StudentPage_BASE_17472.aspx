@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="true" CodeBehind="TeacherPage.aspx.cs" Inherits="HTTP5101_School_System.TeacherPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StudentPage.aspx.cs" Inherits="HTTP5101_School_System.StudentPage" %>
 
 <!DOCTYPE html>
 

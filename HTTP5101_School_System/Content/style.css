@@ -1,18 +1,46 @@
 ﻿
 /*GENERAL CSS*/
-.cwidth{max-width:1080px; margin:0 auto;}
-header,footer{background:#b2b2b2;}
-header{margin-bottom:50px;}
-footer{margin-top:50px;}
+.cwidth {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background: #b2b2b2;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+}
 
 
 /*CSS FOR TABLE-LIKE STYLING*/
-#students_result {width:100%;}
-.listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
+#students_result {
+    width: 100%;
+}
 
-.listitem:after{clear:both;}
-.listitem:nth-child(2n){background:#dedede;}
-.listitem:hover {background: #e9d898;}
+.listitem {
+    background: #fefefe;
+    padding: 12px 5%;
+    width: 90%;
+    overflow: hidden;
+}
+
+    .listitem:after {
+        clear: both;
+    }
+
+    .listitem:nth-child(2n) {
+        background: #dedede;
+    }
+
+    .listitem:hover {
+        background: #e9d898;
+    }
 /*
     sandbox.bittsdevelopment.com/colcalc
     columns : 4
@@ -38,3 +66,141 @@ footer{margin-top:50px;}
     margin-right: 0%;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+
+body {
+    font-size: 22px;
+    background-color: #f2f1ed;
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 89px;
+    display: block;
+    background-color: #36454f;
+}
+
+.header-content {
+    width: 85%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#logo {
+    height: 100%;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    font-family: 'Marck Script', cursive;
+}
+
+    #logo span {
+        font-weight: 1000;
+        color: #f08e63;
+    }
+
+#nav-menu {
+    float: right;
+    height: 100%;
+    display: flex;
+}
+
+    #nav-menu li {
+        height: 100%;
+        display: table;
+        float: left;
+        position: relative;
+        padding-right: 36px;
+    }
+
+        #nav-menu li:last-child {
+            padding-right: 0;
+        }
+
+        #nav-menu li a {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            color: white;
+        }
+
+footer {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #36454f;
+}
+
+.footer-contents {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+    .footer-contents .logo-container {
+        width: 35%;
+        float: left;
+        height: 100%;
+        display: block;
+    }
+
+    .footer-contents .footer-links {
+        width: calc(21.7% - 20px);
+        margin-right: 10px;
+        float: left;
+        height: 100%;
+    }
+
+        .footer-contents .footer-links:last-child {
+            margin-right: 0;
+        }
+
+        .footer-contents .footer-links h2 {
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 2em;
+            color: white;
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .footer-contents .footer-links a {
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 1em;
+            color: white;
+            font-weight: 200px;
+            display: block;
+            width: 100%;
+            padding-bottom: 1em;
+        }
+
+        .footer-contents .footer-links li {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 30px;
+        }
