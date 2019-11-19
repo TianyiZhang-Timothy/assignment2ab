@@ -6,12 +6,14 @@
         <asp:Label for="student_search" runat="server">Search:</asp:Label>
         <asp:TextBox ID="student_search" runat="server"></asp:TextBox>
         <asp:Button runat="server" Text="submit" />
-        <div id="show_sql" runat="server"></div>
+    </div>
+    <div id="student_delete_div">
+
     </div>
     <div class="info_table" runat="server">
         <div class="title">
-            <div class="col3">STUDENT NUMBER</div>
             <div class="col3">FULL NAME</div>
+            <div class="col3">STUDENT NUMBER</div>
             <div class="col3last">ENROLMENT DATE</div>
         </div>
         <div id="student_result" runat="server">

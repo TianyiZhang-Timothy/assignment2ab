@@ -22,15 +22,6 @@ namespace HTTP5101_School_System {
         protected global::System.Web.UI.WebControls.TextBox student_search;
         
         /// <summary>
-        /// show_sql control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl show_sql;
-        
-        /// <summary>
         /// student_result control.
         /// </summary>
         /// <remarks>
