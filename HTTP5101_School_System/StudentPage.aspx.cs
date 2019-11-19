@@ -32,16 +32,16 @@ namespace HTTP5101_School_System
                 string studentid = row["STUDENTID"];
 
                 string studentfirstname = row["STUDENTFNAME"];
-                student_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfirstname + "</a></div>";
+                student_result.InnerHtml += "<div class=\"col3\"><a href=\"ShowStudent.aspx?studentid=" + studentid + "\">" + studentfirstname + "</a></div>";
 
                 string studentlastname = row["STUDENTLNAME"];
-                student_result.InnerHtml += "<div class=\"col4\">" + studentlastname + "</div>";
+                student_result.InnerHtml += "<div class=\"col3\">" + studentlastname + "</div>";
 
                 string studentnumber = row["STUDENTNUMBER"];
-                student_result.InnerHtml += "<div class=\"col4\">" + studentnumber + "</div>";
+                student_result.InnerHtml += "<div class=\"col3\">" + studentnumber + "</div>";
 
                 string enrolmentdate = row["ENROLMENTDATE"];
-                student_result.InnerHtml += "<div class=\"col4last\">" + enrolmentdate + "</div>";
+                student_result.InnerHtml += "<div class=\"col3last\">" + enrolmentdate + "</div>";
 
                 student_result.InnerHtml += "</div>";
             }

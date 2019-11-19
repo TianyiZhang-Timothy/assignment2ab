@@ -18,6 +18,23 @@ footer{margin-top:50px;}
     columns : 4
     gutter/column ratio : 0.2
 */
-.col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
-.col4last{margin-right:0%;}
+.col4, .col4last {
+    float: left;
+    width: 21.73%;
+    margin-right: 4.34%;
+}
+
+.col4last {
+    margin-right: 0%;
+}
+
+.col3, .col3last {
+    float: left;
+    width: 30%;
+    margin-right: 3.3%;
+}
+
+.col3last {
+    margin-right: 0%;
+}
 
