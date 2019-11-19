@@ -43,7 +43,7 @@ namespace HTTP5101_School_System
                 string teacherfullname = teacherfirstname + " " + teacherlastname;
                 string employeenumber = row["EMPLOYEENUMBER"];
                 string hiredate = row["HIREDATE"];
-                string salary = row["SALARY"];
+                string salary = row["SALARY"]; 
 
                 teacher_result.InnerHtml += "<div class=\"col4\">" + teacherid + "</div>";
 
