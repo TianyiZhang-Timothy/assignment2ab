@@ -8,6 +8,7 @@ using System.Diagnostics;
 
 namespace HTTP5101_School_System
 {
+    // reference: this code is created by Christine Bittle
     public class SCHOOLDB
     {
         //things that describe a database

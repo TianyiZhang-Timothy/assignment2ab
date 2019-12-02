@@ -22,13 +22,13 @@ namespace HTTP5101_School_System
             }
 
             // query
-            string query = "select * from CLASSES";
+            string query = "select * from CLASSES C JOIN TEACHERS T ON C.TEACHERID = T.TEACHERID";
 
-            if (searchkey != "")
-            {
-                query += " WHERE CLASSNAME like '%" + searchkey + "%' ";
-                query += " or CLASSCODE like '%" + searchkey + "%' ";
-            }
+            //if (searchkey != "")
+            //{
+            //    query += " WHERE CLASSNAME like '%" + searchkey + "%' ";
+            //    query += " or CLASSCODE like '%" + searchkey + "%' ";
+            //}
 
             var db = new SCHOOLDB();
             List<Dictionary<String, String>> rs = db.List_Query(query);
@@ -36,23 +36,14 @@ namespace HTTP5101_School_System
             {
                 class_result.InnerHtml += "<div class=\"listitem\">";
 
-                string classid = row["TEACHERID"];
-                string classcode = row["CLASSCODE"];
-                string teacherid = row["TEACHERID"];
+                string classid = row["CLASSES.CLASSID"];
+                string classcode = row["CLASSES.CLASSCODE"];
+                string teacherid = row["CLASSES.TEACHERID"];
+                string teacherfname = row["TEACHERS.TEACHERFNAME"];
 
-                string teacherfname = "";
-
-                List<Dictionary<String, String>> ts = db.List_Query("select TEACHERFNAME from TEACHER where TEACHERID = " + teacherid);
-                foreach(Dictionary<String,String>teacher in ts)
-                {
-                    teacherfname = teacher["TEACHERFNAME"];
-                }
-
-                    teacherfname = "can't get teacher name";
-
-                string startdate = row["STARTDATE"];
-                string finishdate = row["FINISHDATE"];
-                string classname = row["CLASSNAME"];
+                string startdate = row["CLASSES.STARTDATE"];
+                string finishdate = row["CLASSES.FINISHDATE"];
+                string classname = row["CLASSES.CLASSNAME"];
 
                 class_result.InnerHtml += "<div class=\"col4\"><a href=\"DetailPage.aspx?studentid=" + classcode + "\">" + classname + "</a></div>";
 
